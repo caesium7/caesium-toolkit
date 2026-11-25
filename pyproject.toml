@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "caesium-toolkit"
-version = "0.1.2"
+version = "0.1.3"
 description = "A beginner-friendly toolkit to make Python and life easy."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -14,4 +14,5 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["caesium_toolkit*"]
