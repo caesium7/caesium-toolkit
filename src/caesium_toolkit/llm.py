@@ -6,8 +6,8 @@ def _get_model():
   if _llm is None:
     from llama_cpp import Llama
     _llm = Llama.from_pretrained(
-        repo_id='Qwen/Qwen2.5-Math-1.5B-Instruct-GGUF',
-        filename='qwen2.5-math-1.5b-instruct-q4_k_m.gguf',
+        repo_id='bartowski/Qwen2.5-Math-1.5B-Instruct-GGUF',
+        filename='*Q4_K_M.gguf',
         n_ctx=2048,
         verbose=False,
     )
