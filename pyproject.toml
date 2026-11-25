@@ -8,7 +8,10 @@ version = "0.0.1"
 description = "A beginner-friendly toolkit to make Python and life easy."
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = []
+dependencies = [
+    "llama-cpp-python>=0.3.0",
+    "huggingface-hub>=0.25.0",
+]
 
 [tool.setuptools.packages.find]
 include = ["caesium_toolkit*"]
