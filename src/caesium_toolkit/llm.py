@@ -86,7 +86,7 @@ def ask_ai(
   printed_len = 0
 
   for chunk in stream:
-    delta = chunk["choices"]["delta"].get("content", "")
+    delta = chunk["choices"][0]["delta"].get("content", "")
     if delta:
       raw_chunks.append(delta)
       cleaned_so_far = _clean_latex("".join(raw_chunks))
