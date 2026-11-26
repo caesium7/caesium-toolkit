@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "caesium-toolkit"
-version = "0.1.6"
+version = "0.1.7"
 description = "A beginner-friendly toolkit to make Python and life easy."
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
     "llama-cpp-python>=0.3.0",
     "huggingface-hub>=0.25.0",
+    "pylatexenc>=2.10",
 ]
 
 [tool.setuptools.packages.find]
